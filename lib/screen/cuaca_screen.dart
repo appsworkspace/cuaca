@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 class CuacaScreen extends StatefulWidget {
   const CuacaScreen({ Key? key }) : super(key: key);
@@ -10,8 +11,11 @@ class CuacaScreen extends StatefulWidget {
 class _CuacaScreenState extends State<CuacaScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Aplikasi Cuaca Sederhana"),
+      ),
+      body: Text("Body aplikasi Cuaca"),
     );
   }
 }
